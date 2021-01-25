@@ -1,0 +1,246 @@
+/*header*/
+
+body
+{
+    background:  #1c1a19;
+    color: whitesmoke;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+
+
+section h1, footer h1, nav a
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 150px;
+    height: 150px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 6em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    color: white;
+ 
+}
+
+/*nav*/
+
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article h1
+{
+    font-size: 2em;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+    font-size: 1em;
+}
+
+caption
+{
+    font-size: 2em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+th
+{
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+td
+{
+    font-size: 1.6em;
+    border: 2px outset rgb(51, 51, 51);
+}
+table
+{
+    border-collapse: collapse;
+    vertical-align: vertical;
+}
+
+aside
+{
+    flex: 10px;
+    position: relative;
+    background-color:black;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    border: 10px outset rgb(51, 51, 51);
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#pierresdego
+{
+    text-align: center;
+}
+
+/*#pierresdego img
+{
+    border: 10px outset rgb(51, 51, 51);
+}
+*/
+aside img
+{
+    margin: 5px 5px 5px 5px ;
+}
+
+iframe
+{
+    border: 10px outset rgb(51, 51, 51);
+}
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    header h1
+    {
+        font-size: 4em;
+    }
+
+    nav
+    {
+        width: auto;
+        text-align: right;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+    iframe
+    {
+        flex-direction: column;
+        width: auto;
+        
+    }
+
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    #pierresdego
+    {
+        width: auto;
+        float: right;
+        margin-left: 15px;
+    }
+
+    aside p:last-child
+    {
+        text-align: center;
+    }
+}

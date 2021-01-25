@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Club de Go Caen</title>
+    </head>
+    
+    <body>
+
+        <div id="bloc_page">
+
+            <header>
+                <div id="titre_principal">
+                <div id="logo">
+                    <img src="ClubdeCaen.jpg" alt="ClubdeGoCaen" />
+                    <h1>Club de Go Caen</h1>   
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="https://www.facebook.com/GoCaen14">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/jeudegocaen/?hl=fr">Instagram</a></li>
+                        <li><a href="mailto:Yoaibgo@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+
+        <section class="Video">
+            <!--<video src="canard.MP4" controls loop></video>-->
+            <iframe width="900" height="400" src="https://www.youtube.com/embed/8tq1C8spV_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;      gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <aside>
+                <form method="POST" action="taitement.php">
+                    <fieldset>
+                        <legend>Vos Coordonnées</legend>
+                            <p>
+                                <label for="email">Email</label><br>
+                                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                                <label for="date">Date de Naissance</label><br>
+                                <input type="date" name="date" id="date" placeholder="Date de Naissance" required ><br>
+                                <label for="pseudo">Pseudo</label><br>
+                                <input type="text" name="pseudo" id="pseudo" maxlength="10" placeholder="Pseudo" autofocus required/><br>
+                                <label for="password">Mot de passe</label><br>
+                                <input type="password" name="motdepasse" id="password" maxlength="8" placeholder="Mot de passe" required><br>
+                            </p>
+                            <p>
+                                <form method="POST" action="traitement.php">
+                                        <label for="ville">Dans quelles villes habitez vous ?</label><br>
+                                        <select name="ville" id="ville">
+                                            <option value="ville">Caen</option>
+                                            <option value="ville">Hérouville Saint Clair</option>
+                                            <option value="ville">Bénouville</option>
+                                            <option value="ville">Mondeville</option>
+                                            <option value="ville">Ifs</option>
+                                            <option value="ville">Ouistreham</option>
+                                        </select>
+                                </form>
+                                    <input type="submit" value="Valider">
+                            </p>
+                    </fieldset>
+                    </aside>
+            </section>
+
+            <!--<div id="banniere_image">
+
+                <div id="banniere_description">
+                    <a href="http://www.tanguy.le-calve.fr/" class="bouton_rouge">Voir l'article <img src="images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>-->
+           
+            
+            <section>
+
+                <article>
+                    <h1>Nos Rendez-Vous</h1>
+                    <p>Le club se reunit le mardi soir de 20h30 à 23h30</p>
+                    <p>Au Newport Café au Quai Vendeuvre sur le port de Caen</p>
+                    <p>Nous pouvons prendre à boire, à manger, mais surtout jouer plusieurs parties !</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.01780827199!2d-0.35466708413795833!3d49.18124868587296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a429f4a55db11%3A0x2194f7265837e74c!2sNewport%20Caf%C3%A9!5e0!3m2!1sfr!2sfr!4v1611481305041!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </article>
+
+                <aside>
+                    <h1>À propos du club</h1>
+                    <p id="pierresdego"><img src="250px-Go_board_part.jpg" alt="Pierredego" /></p>
+                    <p>Petit présentation du club de Go de Caen : Le club est une association loi 1901 qui a été fondé en 1986.</p>
+                    <p>Notre but est de développer la pratique du jeu de Go, dans la région. Les nouveaux joueurs, débutants ou pas, seront toujours les bienvenus.</p>
+                </aside>
+                
+            </section>
+
+            <section>
+                <article>
+                    <h1>Nos Livres</h1>  
+                    <table>
+                        <!--<caption>Nos livres</caption>-->
+                            <tr>
+                                <th>Titres :</th>
+                                <th>Auteurs :</th>
+
+                                <tr>
+                                    <td>Introduction Au Go</td>
+                                    <td>Frédéric Renaud</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bien conduire sa partie de GO</td>
+                                    <td>Lim Yoo Jong et Pierre Lalo</td>
+                                </tr>  
+
+                                <tr>
+                                    <td>Tsumego</td>
+                                    <td>Motoki Noguchi</td>
+                                </tr>
+
+                                <tr>
+                                    <td>L’âme du Go</td>
+                                    <td>Fan Hui</td>
+                                </tr>   
+
+                                <tr>
+                                    <td>Le langage des Pierres</td>
+                                    <td>Motoki Noguchi</td>
+                                </tr>    
+
+                                <tr>    
+                                    <td>Chûban</td>
+                                    <td>Dai Junfu</td>
+                                </tr>
+                            </tr>
+                        </table>
+                </article>
+            </section>
+        
+       
+            
+            <!--<footer>
+                <div>
+                    <form method="post" action="traitement.php">
+                        <p>
+                            Cochez la où vous préféré jouer :<br />
+                            <input type="checkbox" name="bar" id="bar" /> <label for="bar">Bar</label><br />
+                            <input type="checkbox" name="bibliotheque" id="bibliotheque" /> <label for="bibliotheque">Bibliothèque</label><br />
+                            <input type="checkbox" name="maison" id="maison" /> <label for="maison">Maison</label><br />
+                            <input type="checkbox" name="internet" id="internet" /> <label for="internet">Sur internet</label>
+                        </p>
+                     </form>
+                </div>
+
+                <div id="tweet">
+                    <h1>Mon dernier tweet</h1>
+                    <p>Hii haaaaaan !</p>
+                    <p>le 12 mai à 23h12</p>
+                </div>
+
+                <div id="mes_amis">
+                    <h1>Mes amis</h1>
+                    <div id="listes_amis">
+                        <ul>
+                            <li><a href="#">Pupi le lapin</a></li>
+                            <li><a href="#">Mr Baobab</a></li>
+                            <li><a href="#">Kaiwaii</a></li>
+                            <li><a href="#">Perceval.eu</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Belette</a></li>
+                            <li><a href="#">Le concombre masqué</a></li>
+                            <li><a href="#">Ptit prince</a></li>
+                            <li><a href="#">Mr Fan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>-->
+        </div>
+    </body>
+</html>
